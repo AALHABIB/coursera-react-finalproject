@@ -1,4 +1,4 @@
-import Logo from './logo.svg'
+import Logo from '../Assets/logo.svg'
 import { Nav } from './Nav'
 
 
@@ -10,7 +10,7 @@ export function Footer() {
              <h3>Doormat Navigation</h3>
              <Nav />
         </div>
-       
+
         <div>
             <h3>Contact</h3>
             <ul>

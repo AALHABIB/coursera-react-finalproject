@@ -98,7 +98,7 @@ section.highlights {
   grid-template-columns: auto auto auto;
   padding: 5% 10%;
   grid-row-gap: 10%;
-  justify-items: center;  
+  justify-items: center;
 }
 
 div.header {
@@ -114,9 +114,8 @@ div.card {
   grid-template-rows: auto;
   text-align: start;
   width: min-content;
-  justify-items: center;  
+  justify-items: center;
   grid-row-gap: 10%;
-  
 }
 
  .card-details p, h4 {
