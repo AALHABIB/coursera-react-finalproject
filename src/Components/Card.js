@@ -1,4 +1,3 @@
-import RestaurantImage from '../Assets/restauranfood.jpg'
 import Bruchetta from '../Assets/bruchetta.svg'
 import Greeksalad from '../Assets/greeksalad.jpg'
 import Lemondessert from '../Assets/lemondessert.jpg'
@@ -26,13 +25,13 @@ const dishes = [
 
 
 export function Card(props) {
-
+    let dish = dishes.find(dish => dish.name === props.name ? dish : null)
     return (
         <>
-        <img src={props.imgUrl} />
-        <h4>{props.title}</h4>
-        <h4>{props.price}</h4>
-        <p>{props.description}</p>
+        <img src={dish.imgUrl} alt={dish.name}/>
+        <h4>{dish.title}</h4>
+        <h4>{dish.price}</h4>
+        <p>{dish.description}</p>
         <h4>Order a Delivery</h4>
         </>
     )
