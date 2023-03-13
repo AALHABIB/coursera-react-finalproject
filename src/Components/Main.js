@@ -6,14 +6,14 @@ import { Card } from './Card'
 export function Main() {
     return (
     <main>
-        <section className="text-6xl">
-        <div>
+        <section className="md:flex md:items-center md:justify-center bg-green-800 overflow-visible">
+        <div className="md:flex-col">
             <h1>Little Lemon</h1>
             <h3>Chicago</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className="flex-initial w-80 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <PrimaryButton name="TEST" />
         </div>
-        <img src={RestaurantImage} alt="restaurant food sample"/>
+        <img src={RestaurantImage} alt="restaurant food sample" className="h-80 pt-7 pl-6 relative"/>
         </section>
         <section className="highlights">
             <div className="header">
