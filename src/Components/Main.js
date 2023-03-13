@@ -6,7 +6,7 @@ import { Card } from './Card'
 export function Main() {
     return (
     <main>
-        <section className="hero">
+        <section className="text-6xl">
         <div>
             <h1>Little Lemon</h1>
             <h3>Chicago</h3>
