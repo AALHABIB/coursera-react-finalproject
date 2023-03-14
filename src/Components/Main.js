@@ -16,7 +16,7 @@ export function Main() {
         <img src={RestaurantImage} alt="restaurant food sample" className="h-80 pt-7 pl-6 relative"/>
         </section>
         <section className="md:flex-col md:items-center md:justify-center">
-            <div className="md:flex md:justify-between p-10">
+            <div className="md:flex md:justify-between py-10 px-20">
                 <h2>This weeks specials!</h2>
                 <PrimaryButton name="TEST" />
             </div>
