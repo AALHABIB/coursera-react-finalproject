@@ -15,14 +15,16 @@ export function Main() {
         </div>
         <img src={RestaurantImage} alt="restaurant food sample" className="h-80 pt-7 pl-6 relative"/>
         </section>
-        <section className="highlights">
-            <div className="header">
+        <section className="md:flex-col md:items-center md:justify-center">
+            <div className="md:flex md:justify-between p-10">
                 <h2>This weeks specials!</h2>
                 <PrimaryButton name="TEST" />
             </div>
-            <Card name="Greek Salad" />
-            <Card name="Bruchetta" />
-            <Card name= "Lemon Dessert" />
+            <div className="grid md:grid-cols-3 gap-10 py-10 px-20">
+                <Card name="Greek Salad" />
+                <Card name="Bruchetta" />
+                <Card name= "Lemon Dessert" />
+            </div>   
         </section>
     </main>
     )

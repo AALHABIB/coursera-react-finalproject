@@ -27,12 +27,16 @@ const dishes = [
 export function Card(props) {
     let dish = dishes.find(dish => dish.name === props.name ? dish : null)
     return (
-        <>
-        <img src={dish.imgUrl} alt={dish.name}/>
-        <h4>{dish.title}</h4>
-        <h4>{dish.price}</h4>
-        <p>{dish.description}</p>
-        <h4>Order a Delivery</h4>
-        </>
+        <div className="rounded-t-lg overflow-hidden bg-slate-200">
+                <img src={dish.imgUrl} alt={dish.name} className="w-full h-32 sm:h-48 object-cover" />
+            <div className="p-4">
+                <div className="flex justify-between">
+                    <h4>{dish.name}</h4>
+                    <h4>{'$' + dish.price}</h4>
+                </div>
+                <p className="py-4">{dish.description}</p>
+                <h4>Order a Delivery</h4>
+            </div>
+        </div>
     )
 }
