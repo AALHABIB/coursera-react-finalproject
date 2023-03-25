@@ -1,5 +1,5 @@
 
-export function Specials() {
+export function BookingPage() {
     return (
         <>
         </>
