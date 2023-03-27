@@ -3,7 +3,7 @@ import Logo from '../Assets/logo.svg'
 
 export function Footer() {
     return (
-    <footer className ="grid grid-cols-4 py-10 px-20">
+    <footer className ="grid grid-cols-4 py-10 px-20 mt-20">
         <img src={Logo} alt="Company Logo" className=" self-center"/>
             <nav className="">
             <h3>Doormat Navigation</h3>
