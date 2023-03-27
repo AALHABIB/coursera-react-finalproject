@@ -2,7 +2,7 @@
 export function PrimaryButton(props) {
     return (
         <>
-        <button>{props.name}</button>
+        <button className="flex items-center p-3 bg-yellow-300 rounded-3xl">{props.name}</button>
         </>
     )
 }
